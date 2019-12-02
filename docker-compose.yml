@@ -1,4 +1,4 @@
-version: "3"
+version: "2"
 
 services:
   grafana:
@@ -13,8 +13,7 @@ services:
     ports:
       - 3000:3000
     user: "104"
-services:
-  post:
+ postgres:
     image: postgres:9.6
     container_name: "postgres"
     environment:
