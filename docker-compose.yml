@@ -17,9 +17,9 @@ services:
     image: postgres:11
     container_name: "postgres"
     environment:
-      - POSTGRES_DB=grafana
       - POSTGRES_USER=grafana
       - POSTGRES_PASSWORD="123456"
+      - POSTGRES_DB=grafana
       - TZ="America/Bahia"
     volumes:
       - "./data/postgres:/var/lib/postgresql/data"
